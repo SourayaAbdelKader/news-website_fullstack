@@ -13,8 +13,6 @@ $.getJSON("http://localhost/news-assignment/backend/science-article.php", functi
     science_title.innerHTML = data[0].title;
     science_author.innerHTML = data[0].author;
     science_article.innerHTML = data[0].article;
-    console.log(data[0].title)
-    console.log(typeof(data[0].title))
     });
     
 $.getJSON("http://localhost/news-assignment/backend/economy-article.php", function (data) {
@@ -28,8 +26,6 @@ $.getJSON("http://localhost/news-assignment/backend/economy-article.php", functi
     economy_title.innerHTML = data[0].title;
     economy_author.innerHTML = data[0].author;
     economy_article.innerHTML = data[0].article;
-    console.log(data[0].title)
-    console.log(typeof(data[0].title))
     });
 
 $.getJSON("http://localhost/news-assignment/backend/art-articles.php", function (data) {
@@ -39,11 +35,21 @@ $.getJSON("http://localhost/news-assignment/backend/art-articles.php", function 
     const art_image = document.getElementById("art-image");
     const art_brief = document.getElementById("brief");
     art_image.src = data[0].images;
-    art_brief.innerHTML = data[0].brief
+    art_brief.innerHTML = data[0].brief;
     art_title.innerHTML = data[0].title;
     art_author.innerHTML = data[0].author;
     art_article.innerHTML = data[0].article;
-    console.log(data[0].title)
-    console.log(typeof(data[0].title))
     });
+
+    $.getJSON("http://localhost/news-assignment/backend/art-articles.php", function (data) {
+    const ad_title = document.getElementById("ad-title");
+    const ad_brief = document.getElementById("ad-brief");
+    const ad_author = document.getElementById("ad-author");
+    const ad_image = document.getElementById("ad-image");
+    ad_image.src = data[0].images;
+    ad_author.innerHTML = data[0].author;
+    ad_brief.innerHTML = data[0].brief;
+    ad_title.innerHTML = data[0].title;
+    });
+
 
