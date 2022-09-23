@@ -6,7 +6,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection.php");
 
-$query = $mysqli -> prepare("SELECT * FROM articles");
+$query = $mysqli -> prepare("SELECT * FROM articles WHERE category= 'Art' ");
 
 $query -> execute();
 $array = $query -> get_result();
