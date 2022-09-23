@@ -1,7 +1,7 @@
-// for this assignment, I searched for a couple of articles and put them in the dat base, I used the following 
+// for this assignment, I searched for a couple of articles and put them in the dats base, I used the following 
 //  method to fetch and display them
 // In an actual website there will be a whole page with articles of art and economy, which the client can pick and read, but for the sake of this assignment I choosed 3 articles from 3 different categories to display them
-
+// directery into the website
 $.getJSON("http://localhost/news-assignment/backend/art-articles.php", function (data) {
     const art_title = document.getElementById("art-title");
     const art_author = document.getElementById("art-author");
