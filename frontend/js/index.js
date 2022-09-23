@@ -2,7 +2,7 @@
 //  method to fetch and display them
 // In an actual website there will be a whole page with articles of art and economy, which the client can pick and read, but for the sake of this assignment I choosed 3 articles from 3 different categories to display them
 // directery into the website
-$.getJSON("http://localhost/news-assignment/backend/art-articles.php", function (data) {
+$.getJSON("http://localhost/news-assignment/backend/science-article.php", function (data) {
     const science_title = document.getElementById("science-title");
     const science_author = document.getElementById("science-author");
     const science_article = document.getElementById("science-article");
@@ -16,7 +16,7 @@ $.getJSON("http://localhost/news-assignment/backend/art-articles.php", function 
     console.log(data[0].title)
     console.log(typeof(data[0].title))
     });
-
+    
 $.getJSON("http://localhost/news-assignment/backend/economy-article.php", function (data) {
     const economy_title = document.getElementById("economy-title");
     const economy_author = document.getElementById("economy-author");
@@ -32,7 +32,7 @@ $.getJSON("http://localhost/news-assignment/backend/economy-article.php", functi
     console.log(typeof(data[0].title))
     });
 
-$.getJSON("http://localhost/news-assignment/backend/science-article.php", function (data) {
+$.getJSON("http://localhost/news-assignment/backend/art-articles.php", function (data) {
     const art_title = document.getElementById("art-title");
     const art_author = document.getElementById("art-author");
     const art_article = document.getElementById("art-article");
